@@ -20,11 +20,29 @@ h1
   font-size: 2.5em
   font-weight: bold
   float: left
-  span.logo-letter
-    color: #ff0084
 
-.heart
+.banner
+  background: url(../images/bg-banner.jpg)
+  height: 350px
+  background-position: center
+  background-size: cover
+  .h-container
+    padding-top: 150px
+    background: transparent
+    color: rgb(246, 246, 246)
+    font-size: 2.5em
+    text-transform: uppercase
+    font-weight: 600
+    color: #fff
+    padding-left: 15px
+    text-shadow: 1px 1px 3px #747373
+
+.logo span.logo-letter, .heart
   color: #ff0084
+
+.menu
+  padding: 20px
+  background: #fff
 
 .item
   display: inline-block
@@ -130,30 +148,45 @@ img, iframe
 .title-hide
   display: none
 
+.top-bar, .footer
+  padding: 6px 9px 3px
+  min-height: 45px
+
 .top-bar
   position: fixed
   width: 100%
   top: -1px
   z-index: 9
-  background: #000000
-  background: #000000d9
-  padding: 6px 9px 3px
-  box-shadow: 0px 3px 13px #3c3c3c
-  min-height: 45px
+  background: rgba(0, 0, 0, 0.46)
+  background: #0000007d
+  -webkit-transition: all .9s ease
+  -moz-transition: all .9s ease
+  -o-transition: all .9s ease
+  -ms-transition: all .9s ease
+  transition: all .9s ease
 
 .footer
-  background: #000000
-  background: #000000d9
-  padding: 6px 9px 3px
-  box-shadow: 0px 3px 13px #3c3c3c
-  min-height: 45px
   margin: 0
   text-align: center
   color: #fff
 
-.top-bar img
-  width: 142px
-  float: left
+.top-bar.interaction, .footer
+  background: #000000
+  background: #000000d9
+  padding: 6px 9px 3px
+  box-shadow: 0px 3px 13px #3c3c3c
+  min-height: 45px
+
+.top-bar
+  &.interaction
+    -webkit-transition: all .9s ease
+    -moz-transition: all .9s ease
+    -o-transition: all .9s ease
+    -ms-transition: all .9s ease
+    transition: all .9s ease
+  img
+    width: 142px
+    float: left
 
 input[type="text"]
   height: 25px
@@ -214,9 +247,6 @@ div
       -ms-transition: all .9s ease
       transition: all .9s ease
     display: none
-
-.list-container
-  margin: 112px 0px 0px
 
 i.fa
   &.fa-search, &.fa-times
@@ -331,13 +361,14 @@ i.fa.fa-times
   .search-container
     margin-right: 36px
 
-@media only screen and (max-width: 1300px)
-  .list-container
-    margin: 112px 25px 0px
-
 @media only screen and (max-width: 530px)
+  .menu
+    display: none
   .container
-    margin-top: 70px
+    margin-top: 3px
+  .banner .h-container
+    text-align: center
+    padding-left: 0
   .search-container
     position: absolute
     margin-top: -51px
@@ -390,6 +421,12 @@ i.fa.fa-times
 @media only screen and (max-width: 434px)
   .search-container
     margin-left: -68%
+  .banner
+    height: 260px
+    .h-container
+      padding: 0
+      padding-top: 114px
+      font-size: 1.5em
 
 @media only screen and (max-width: 406px)
   .search-container
