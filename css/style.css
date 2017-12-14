@@ -182,6 +182,19 @@ div#viewlist, div#viewgrid {
   color: #fff;
   box-shadow: 1px 2px 9px #737373;
   font-size: 1em;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
+}
+div#viewlist:hover, div#viewgrid:hover {
+  background: #e03d78;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
 }
 div#viewgrid {
   display: none;
