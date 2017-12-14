@@ -17,15 +17,31 @@ var Header = React.createClass({
 });
 React.render(<Header search="search"/>,document.querySelector("component-header"));
 
+var Banner = React.createClass({
+  render: function(){
+    return (
+      <section className="banner">
+        <div className="h-container">
+          {this.props.slogan}<br />
+          {this.props.line}
+        </div>
+      </section>
+    )
+  }
+});
+React.render(<Banner slogan="Let's get started" line="In the future!" />,document.querySelector("component-banner"));
+
 var Grid = React.createClass({
   render: function(){
     return (
-      <nav className="h-container">
-        <div className="list-container">
-          <div id="viewlist">{this.props.textlist}&nbsp;&nbsp;<i className="fa fa-th-list" aria-hidden="true"></i></div>
-          <div id="viewgrid">{this.props.textgrid}&nbsp;&nbsp;<i className="fa fa-th-large" aria-hidden="true"></i></div>  
-        </div>
-      </nav>
+      <div className="menu">
+        <nav className="h-container">
+          <div className="list-container">
+            <div id="viewlist">{this.props.textlist}&nbsp;&nbsp;<i className="fa fa-th-list" aria-hidden="true"></i></div>
+            <div id="viewgrid">{this.props.textgrid}&nbsp;&nbsp;<i className="fa fa-th-large" aria-hidden="true"></i></div>  
+          </div>
+        </nav>
+      </div>
     )
   }
 });
