@@ -3,6 +3,11 @@ body {
   margin: 0;
   font-family: 'Lato', sans-serif;
 }
+h1 {
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0;
+}
 .masonry {
   column-count: 6;
   column-gap: 1em;
@@ -16,7 +21,7 @@ body {
   font-weight: bold;
   float: left;
 }
-.logo span.letter, .heart {
+.logo span.logo-letter, .heart {
   color: #ff0084;
 }
 .item {
