@@ -5,7 +5,7 @@ It is Flickr APP prototype <br>
 [Demo here](http://onclickmidia.net/ibm) 
 
 ## Layout
-![Layout](http://onclickmidia.net/ibm/images/flickr-app.png)
+![Layout](http://onclickmidia.net/ibm/images/flickr-app-mockup.png)
 
 ## Technologies
 - HTML
