@@ -4,7 +4,7 @@ var Header = React.createClass({
     return (
       <div className="top-bar">
         <div className="h-container">
-          <div className="logo">flick<span className="letter">r</span></div>
+          <div className="logo">flick<span className="logo-letter">r</span></div>
           <div className="search-container">
             <input type="text" placeholder={this.props.search} data-search />
             <i className="fa fa-search" aria-hidden="true"></i>
@@ -53,13 +53,13 @@ var AppList = React.createClass({
   render: function() {
     return (
       <div className="container">
-        <div className="title-in">Album Gallery&nbsp;<span className="term"></span></div>
+        <div className="title-in"><h1>Album Gallery&nbsp;<span className="term"></span></h1></div>
           <div className="masonry" id="grid-view">
             {this.state.flickr_result.map(function(flickr) {
-              var urlLarge = 'https://farm' + flickr.farm + '.staticflickr.com/' + flickr.server + '/' + flickr.id + '_' + flickr.secret + '.jpg';
+              var imgUrl = 'https://farm' + flickr.farm + '.staticflickr.com/' + flickr.server + '/' + flickr.id + '_' + flickr.secret + '.jpg';
               return (
                 <div className="hides item bgload" data-filter-item data-filter-name={flickr.title.toLowerCase()}>
-                  <img src={urlLarge} className='fade'/>
+                  <img src={imgUrl} className='fade'/>
                   <div className="title">{flickr.title}</div>
                 </div>
               );
@@ -82,7 +82,7 @@ var Footer = React.createClass({
     )
   }
 });
-React.render(<Footer credits="Developed with " who=" by Leonel"/>, document.querySelector('component-footer'));
+React.render(<Footer credits="Made with " who=" by Leonel"/>, document.querySelector('component-footer'));
 
 var Modal = React.createClass({
   render: function(){
