@@ -9,7 +9,7 @@ h1 {
   margin: 0;
 }
 .masonry {
-  column-count: 6;
+  column-count: 5;
   column-gap: 1em;
   max-width: 1300px;
   margin: 0 auto;
@@ -21,8 +21,29 @@ h1 {
   font-weight: bold;
   float: left;
 }
+.banner {
+  background: url(../images/bg-banner.jpg);
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+.banner .h-container{
+  padding-top: 150px;
+  background: transparent;
+  color: rgb(246, 246, 246);
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 15px;
+  text-shadow: 1px 1px 3px #747373;
+}
 .logo span.logo-letter, .heart {
   color: #ff0084;
+}
+.menu {
+  padding: 20px;
+  background: #fff;
 }
 .item {
   display: inline-block;
@@ -129,23 +150,41 @@ img, iframe {
 .title-hide {
   display: none;
 }
+.top-bar, .footer{
+  padding: 6px 9px 3px;
+  min-height: 45px;
+}
 .top-bar {
   position: fixed;
   width: 100%;
   top: -1px;
   z-index: 9;
+  background: rgba(0, 0, 0, 0.46);
+  background: #0000007d;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
 }
-.top-bar, .footer {
+.footer {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+.top-bar.interaction, .footer{
   background: #000000;
   background: #000000d9;
   padding: 6px 9px 3px;
   box-shadow: 0px 3px 13px #3c3c3c;
   min-height: 45px;
 }
-.footer {
-  margin: 0;
-  text-align: center;
-  color: #fff;
+.top-bar..interaction{
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
 }
 .top-bar img {
   width: 142px;
@@ -204,9 +243,6 @@ div#viewlist:hover, div#viewgrid:hover {
 }
 div#viewgrid {
   display: none;
-}
-.list-container {
-  margin: 112px 0px 0px;
 }
 i.fa.fa-search, i.fa.fa-times {
   position: relative;
@@ -335,15 +371,16 @@ i.fa.fa-times {
   }
 }
 
-@media only screen and (max-width: 1300px) {
-  .list-container {
-    margin: 112px 25px 0px;
-  }
-}
-
 @media only screen and (max-width: 530px) {
+  .menu{
+    display: none;
+  }
   .container {
-    margin-top: 70px;
+    margin-top: 3px;
+  }
+  .banner .h-container{
+    text-align: center;
+    padding-left: 0;
   }
   .search-container {
     position: absolute;
@@ -404,6 +441,14 @@ i.fa.fa-times {
 @media only screen and (max-width: 434px) {
   .search-container {
     margin-left: -68%;
+  }
+  .banner{
+    height: 260px;
+  }
+  .banner .h-container {
+    padding: 0;
+    padding-top: 114px;
+    font-size: 1.5em;
   }
 }
 
