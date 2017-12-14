@@ -2,7 +2,7 @@
 var Header = React.createClass({
   render: function(){
     return (
-      <div className="top-bar">
+      <header className="top-bar">
         <div className="h-container">
           <div className="logo">flick<span className="logo-letter">r</span></div>
           <div className="search-container">
@@ -11,7 +11,7 @@ var Header = React.createClass({
             <i className="fa fa-times" aria-hidden="true"></i>
           </div>
         </div>
-      </div>
+      </header>
     )
   }
 });
@@ -20,12 +20,12 @@ React.render(<Header search="search"/>,document.querySelector("component-header"
 var Grid = React.createClass({
   render: function(){
     return (
-      <div className="h-container">
+      <nav className="h-container">
         <div className="list-container">
           <div id="viewlist">{this.props.textlist}&nbsp;&nbsp;<i className="fa fa-th-list" aria-hidden="true"></i></div>
           <div id="viewgrid">{this.props.textgrid}&nbsp;&nbsp;<i className="fa fa-th-large" aria-hidden="true"></i></div>  
         </div>
-      </div>
+      </nav>
     )
   }
 });
@@ -52,7 +52,7 @@ var AppList = React.createClass({
   },
   render: function() {
     return (
-      <div className="container">
+      <section className="container">
         <div className="title-in"><h1>Album Gallery&nbsp;<span className="term"></span></h1></div>
           <div className="masonry" id="grid-view">
             {this.state.flickr_result.map(function(flickr) {
@@ -65,7 +65,7 @@ var AppList = React.createClass({
               );
             })}
           </div>
-      </div>
+      </section>
     )      
   }
 });
@@ -74,11 +74,11 @@ React.render(<AppList source="https://api.flickr.com/services/rest/?method=flick
 var Footer = React.createClass({
   render: function(){
     return (
-      <div className="footer">
+      <footer className="footer">
         <div className="list-container-footer">
           {this.props.credits}&nbsp;<span className="heart"><i className="fa fa-heart" aria-hidden="true"></i></span>&nbsp;{this.props.who}
         </div>
-      </div>
+      </footer>
     )
   }
 });
