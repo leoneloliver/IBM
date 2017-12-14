@@ -4,6 +4,9 @@ Flickr APP - fed-exercise
 It is Flickr APP prototype <br>
 [Demo here](http://onclickmidia.net/ibm) 
 
+## Layout
+![Layout](https://github.com/ibmfrontend/fedexercise/blob/master/assets/fedexercisewf.png)
+
 ## Technologies
 - HTML
 - CSS, SASS & SMACSS
