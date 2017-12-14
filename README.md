@@ -9,8 +9,8 @@ It is Flickr APP prototype <br>
 
 ## Technologies
 - HTML
-- CSS, SASS & SMACSS
-- Javascript, jQuery
+- CSS, Pre processing SASS & SMACSS methodology
+- Javascript & jQuery
 - Reactjs
 
 ## Javascript dependencies:
@@ -21,11 +21,11 @@ It is Flickr APP prototype <br>
    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 ```
 
-## Required Information
+## Required Information for the API
 - Flickr API Key: `a5e95177da353f58113fd60296e1d250` (you can also use your own key)
 - Nasa's user id: `24662369@N07`
 
-## Retrieve public photos
+## Specification to retrieve public photos
 Endpoint: `https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos`
 
 Requirements:
