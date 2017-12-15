@@ -8,11 +8,45 @@ h1
   font-weight: 100
   margin: 0
 
-.masonry
-  column-count: 5
-  column-gap: 1em
-  max-width: 1300px
-  margin: 0 auto
+.top-bar, .footer
+  padding: 6px 9px 3px
+  min-height: 45px
+
+.top-bar
+  position: fixed
+  width: 100%
+  top: -1px
+  z-index: 9
+  background: rgba(0, 0, 0, 0.46)
+  background: #0000007d
+  -webkit-transition: all .9s ease
+  -moz-transition: all .9s ease
+  -o-transition: all .9s ease
+  -ms-transition: all .9s ease
+  transition: all .9s ease
+
+.footer
+  margin: 0
+  text-align: center
+  color: #fff
+
+.top-bar.interaction, .footer
+  background: #000000
+  background: #000000d9
+  padding: 6px 9px 3px
+  box-shadow: 0px 3px 13px #3c3c3c
+  min-height: 45px
+
+.top-bar
+  &.interaction
+    -webkit-transition: all .9s ease
+    -moz-transition: all .9s ease
+    -o-transition: all .9s ease
+    -ms-transition: all .9s ease
+    transition: all .9s ease
+  img
+    width: 142px
+    float: left
 
 .logo
   font-family: sans-serif
@@ -43,6 +77,12 @@ h1
 .menu
   padding: 20px
   background: #fff
+
+.masonry
+  column-count: 5
+  column-gap: 1em
+  max-width: 1300px
+  margin: 0 auto
 
 .item
   display: inline-block
@@ -147,46 +187,6 @@ img, iframe
 
 .title-hide
   display: none
-
-.top-bar, .footer
-  padding: 6px 9px 3px
-  min-height: 45px
-
-.top-bar
-  position: fixed
-  width: 100%
-  top: -1px
-  z-index: 9
-  background: rgba(0, 0, 0, 0.46)
-  background: #0000007d
-  -webkit-transition: all .9s ease
-  -moz-transition: all .9s ease
-  -o-transition: all .9s ease
-  -ms-transition: all .9s ease
-  transition: all .9s ease
-
-.footer
-  margin: 0
-  text-align: center
-  color: #fff
-
-.top-bar.interaction, .footer
-  background: #000000
-  background: #000000d9
-  padding: 6px 9px 3px
-  box-shadow: 0px 3px 13px #3c3c3c
-  min-height: 45px
-
-.top-bar
-  &.interaction
-    -webkit-transition: all .9s ease
-    -moz-transition: all .9s ease
-    -o-transition: all .9s ease
-    -ms-transition: all .9s ease
-    transition: all .9s ease
-  img
-    width: 142px
-    float: left
 
 input[type="text"]
   height: 25px
@@ -362,6 +362,8 @@ i.fa.fa-times
     margin-right: 36px
 
 @media only screen and (max-width: 530px)
+  .top-bar
+    padding: 6px 0px 3px
   .menu
     display: none
   .container
