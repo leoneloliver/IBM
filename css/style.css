@@ -320,11 +320,13 @@ i.fa.fa-search, i.fa.fa-times {
 i.fa.fa-times {
   font-size: 1.5em;
 }
+
 @media only screen and (max-width: 1000px) {
   .masonry {
     column-count: 4;
   }
 }
+
 @media only screen and (max-width: 50em) {
   .masonry {
     column-count: 2;
@@ -346,6 +348,7 @@ i.fa.fa-times {
     color: #fff;
   }
 }
+
 @media only screen and (max-width: 30em) {
   .masonry {
     column-count: 1;
@@ -361,13 +364,15 @@ i.fa.fa-times {
     margin-right: 0;
   }
 }
+
 @media only screen and (max-width: 1420px) {
   .search-container {
     margin-right: 36px;
   }
 }
+
 @media only screen and (max-width: 530px) {
-  .top-bar{
+  .top-bar, .top-bar.interaction{
     padding: 6px 0px 3px;
   }
   .menu{
@@ -429,11 +434,13 @@ i.fa.fa-times {
     font-size: 1.3em;
   }
 }
+
 @media only screen and (max-width: 442px) {
   i.fa.fa-search, i.fa.fa-times {
     margin-left: 11px;
   }
 }
+
 @media only screen and (max-width: 434px) {
   .search-container {
     margin-left: -68%;
@@ -447,22 +454,26 @@ i.fa.fa-times {
     font-size: 1.5em;
   }
 }
+
 @media only screen and (max-width: 406px) {
   .search-container {
     margin-left: -69%;
   }
 }
+
 @media only screen and (max-width: 400px) {
   i.fa.fa-search, i.fa.fa-times {
     margin-left: 8px;
   }
 }
+
 @media only screen and (max-width: 380px) {
   i.fa.fa-search, i.fa.fa-times {
     font-size: 1.4em;
     margin-top: 13px;
   }
 }
+
 @media only screen and (max-width: 349px) {
   .search-container {
     margin-left: -71%;
@@ -471,6 +482,7 @@ i.fa.fa-times {
     margin-left: 5px;
   }
 }
+
 .search-container i.fa.fa-times {
   display: none;
 }
