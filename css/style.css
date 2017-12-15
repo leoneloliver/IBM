@@ -54,6 +54,11 @@ h1 {
   font-size: 2.5em;
   font-weight: bold;
   float: left;
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  transition: all .9s ease;
 }
 .banner {
   background: url(../images/bg-banner.jpg);
@@ -372,8 +377,13 @@ i.fa.fa-times {
 }
 
 @media only screen and (max-width: 530px) {
-  .top-bar, .top-bar.interaction{
-    padding: 6px 0px 3px;
+  .logo{
+    margin-left: -15px;
+    -webkit-transition: all .9s ease;
+    -moz-transition: all .9s ease;
+    -o-transition: all .9s ease;
+    -ms-transition: all .9s ease;
+    transition: all .9s ease;
   }
   .menu{
     display: none;
