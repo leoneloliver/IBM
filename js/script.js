@@ -1,7 +1,7 @@
 $(document).ready(function() {
   setTimeout(function(){ 
     // search top bar behaviors
-    $('[data-search]').on('keyup', function() {
+    $('[data-search]').on('change keyup input', function() {
       var searchVal = $(this).val();
       var filterItems = $('[data-filter-item]');
       if ( searchVal !== '' ) {
