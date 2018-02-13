@@ -1,5 +1,5 @@
-# IBM
-Flickr APP - fed-exercise
+# flickr
+Flickr APP
 
 It is Flickr APP prototype <br>
 [Demo here](http://onclickmidia.net/ibm) 
