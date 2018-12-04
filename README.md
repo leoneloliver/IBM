@@ -2,10 +2,7 @@
 Flickr APP
 
 It is Flickr APP prototype <br>
-[Demo here](http://onclickmidia.net/flickr) 
-
-## Layout
-![Layout](http://onclickmidia.net/ibm/images/flickr-app-mockup.png)
+[Demo here](https://flickrapp.netlify.com/) 
 
 ## Technologies
 - HTML
