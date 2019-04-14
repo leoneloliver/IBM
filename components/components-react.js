@@ -74,10 +74,12 @@ var AppList = React.createClass({
             {this.state.flickr_result.map(function(flickr) {
               var imgUrl = 'https://farm' + flickr.farm + '.staticflickr.com/' + flickr.server + '/' + flickr.id + '_' + flickr.secret + '.jpg';
               return (
-                <div className="hides item bgload" data-filter-item data-filter-name={flickr.title.toLowerCase()}>
-                  <img src={imgUrl} className='fade'/>
-                  <div className="title">{flickr.title}</div>
-                </div>
+                if(flickr.farm != 0){
+                  <div className="hides item bgload" data-filter-item data-filter-name={flickr.title.toLowerCase()}>
+                    <img src={imgUrl} className='fade'/>
+                    <div className="title">{flickr.title}</div>
+                  </div>
+                }
               );
             })}
           </div>
