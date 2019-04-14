@@ -72,15 +72,17 @@ var AppList = React.createClass({
         <div className="title-in"><h1>Album Gallery&nbsp;<span className="term"></span></h1></div>
           <div className="masonry" id="grid-view">
             {this.state.flickr_result.map(function(flickr) {
-              var imgUrl = 'https://farm' + flickr.farm + '.staticflickr.com/' + flickr.server + '/' + flickr.id + '_' + flickr.secret + '.jpg';
               if(flickr.farm != 0){
-                return (             
-                  <div className="hides item bgload" data-filter-item data-filter-name={flickr.title.toLowerCase()}>
-                    <img src={imgUrl} className='fade'/>
-                    <div className="title">{flickr.title}</div>
-                  </div>
-                );
+                var imgUrl = 'https://solarsystem.nasa.gov/system/resources/detail_files/933_BIG_P_COLOR_2_TRUE_COLOR1_1980.jpg';
+              else{  
+                var imgUrl = 'https://farm' + flickr.farm + '.staticflickr.com/' + flickr.server + '/' + flickr.id + '_' + flickr.secret + '.jpg';
               }
+              return (             
+                <div className="hides item bgload" data-filter-item data-filter-name={flickr.title.toLowerCase()}>
+                  <img src={imgUrl} className='fade'/>
+                  <div className="title">{flickr.title}</div>
+                </div>
+              );
             })}
           </div>
       </section>
