@@ -72,9 +72,9 @@ var AppList = React.createClass({
         <div className="title-in"><h1>Album Gallery&nbsp;<span className="term"></span></h1></div>
           <div className="masonry" id="grid-view">
             {this.state.flickr_result.map(function(flickr) {
-              if(flickr.farm != 0){
+              if(flickr.farm == 0){
                 var imgUrl = 'https://solarsystem.nasa.gov/system/resources/detail_files/933_BIG_P_COLOR_2_TRUE_COLOR1_1980.jpg';
-              else{  
+              }else{  
                 var imgUrl = 'https://farm' + flickr.farm + '.staticflickr.com/' + flickr.server + '/' + flickr.id + '_' + flickr.secret + '.jpg';
               }
               return (             
